@@ -176,7 +176,7 @@ namespace BasicProgramming
             }
             catch (Exception e2)
             {
-                Console.WriteLine("INPUT SHOULD BE STRING");
+                Console.WriteLine("INPUT SHOULD BE INTEGER");
             }   
         }
 
