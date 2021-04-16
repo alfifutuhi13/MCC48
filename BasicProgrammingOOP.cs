@@ -54,6 +54,10 @@ namespace BasicProgrammingOOP
                             case 2:
                                 //Membuat Objek Menu 2
                                 Menu2 m2 = new Menu2();
+                                //Meminta input Nama
+                                Console.WriteLine("Please input your name ");
+                                string inputNama = Console.ReadLine();
+                                Console.WriteLine("");
 
                                 m2.Calc(inputNama);
 
@@ -61,12 +65,21 @@ namespace BasicProgrammingOOP
                             case 3:
                                 //Membuat Objek Menu 3
                                 Menu3 m3 = new Menu3();
+                                //Meminta input Nama
+                                Console.WriteLine("Please input your name ");
+                                string inputNama2 = Console.ReadLine();
+                                Console.WriteLine("");
                                 m3.Calc(inputNama2);
 
                                 break;
                             case 4:
                                 //Membuat objek Menu 4
                                 Menu4 m4 = new Menu4();
+                                //Meminta input array size
+                                Console.WriteLine("Please input the array size ");
+                                int inputArrSize = Convert.ToInt32(Console.ReadLine());
+
+                                Console.WriteLine("");
                                 if (inputArrSize > 0)
                                 {
                                     m4.Calc(inputArrSize);
@@ -207,14 +220,6 @@ namespace BasicProgrammingOOP
     {
         private int i = 0;
 
-        //Constructor
-        public Menu2() 
-        {
-            //Meminta input Nama
-            Console.WriteLine("Please input your name ");
-            string inputNama = Console.ReadLine();
-            Console.WriteLine("");
-        }
         public override void Calc(string n)
         {
             this.inputNama = n;
@@ -233,14 +238,6 @@ namespace BasicProgrammingOOP
     {
         private int j = 1;
 
-        //Constructor
-        public Menu3() 
-        {
-            //Meminta input Nama
-            Console.WriteLine("Please input your name ");
-            string inputNama2 = Console.ReadLine();
-            Console.WriteLine("");
-        }
         public override void Calc(string n)
         {
             this.inputNama2 = n;
@@ -258,13 +255,6 @@ namespace BasicProgrammingOOP
         private int k = 0;
         private int sum = 0;
 
-        public Menu4() 
-        {
-            //Meminta input array size
-            Console.WriteLine("Please input the array size ");
-            int inputArrSize = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("");
-        }
         public override void Calc(int size)
         {
             this.inputArrSize = size;
